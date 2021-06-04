@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherWind</title>
+</head>
+
+<body class="bg-gray-700">
+    <div class="max-w-md mx-auto text-xl bg-green-500 border-4 border-blue-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl m-10">
+        <div class=" text-center   grid grid-cols-2 gap-12 place-items-stretch">
+            <div class="h-16  m-5">
+                <p id="city">
+
+                </p>
+            </div>
+            <div class="h-16  m-5">
+                <p id="country">
+
+                </p>
+            </div>
+        </div>
+        <div class=" text-center  grid grid-cols-3 gap-12 place-items-stretch">
+            <div class="h-24  m-5">
+                <h3 class="text-xl text-center text-red-400">Status</h3>
+                <p id="status"></p>
+                <img src="" alt="" id="statusIcon">
+
+            </div>
+            <div class="h-24 h-24  m-5">
+                <h3 class="text-center text-xl text-red-400">Temperatire</h3>
+                <hr>
+                <p>
+                    <span id="temp"></span> °C
+                </p>
+            </div>
+            <div class="h-24 h-24  m-5">
+                <p>wind : <span id="wind"></span> Km/h</p>
+                <p> precip : <span id="precip"></span> mm</p>
+                <p>pressure : <span id="pressure"></span> mb</p>
+            </div>
+        </div>
+        <h2 class="text-red-400 text-xl text-center font-bold">More informations</h2>
+        <div class="text-center text-xl text-gray-200  grid grid-cols-5 gap-2 place-items-stretch">
+
+            <div class="h-24 h-24  m-5 grid grid-rows-3">
+                <span>Humidity</span>
+
+                <span class="text-purple-300" id="humidity"> %</span>
+
+            </div>
+            <div class="h-24 h-24  m-5 grid grid-rows-3">
+                <span>Feelslike</span>
+
+                <span class="text-purple-300" id="feelslike"></span>
+            </div>
+            <div class="h-24 h-24  m-5 grid grid-rows-3">
+                <span>Visibility</span>
+
+                <span class="text-purple-300" id="visibility">  km</span>
+            </div>
+            <div class="h-24 h-24  m-5 grid grid-rows-3">
+                <span>UV</span>
+
+                <span class="text-purple-300" id="uv"></span>
+            </div>
+            <div class="h-24 h-24  m-5 grid grid-rows-3">
+                <span>is day ?</span>
+
+                <span class="text-purple-300" id="isday"></span>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-md mx-auto bg-gray-900 rounded h-9 shadow-2xl overflow-hidden md:max-w-2xl m-10 text-gray-400 text-center">
+        Copyright © Website Created by <b>Hakkou Mouataz</b>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
